@@ -32,19 +32,19 @@ The project is designed as a hands-on SIEM/XDR home lab and portfolio project fo
 ## 🧩 Planned lab architecture
 
 ```text
-+-------------------+          +-----------------------+
++-------------------+           +------------------------+
 | Kali Linux         |          | Ubuntu Endpoint        |
 | Attacker machine   | -------> | Wazuh Agent            |
 | nmap, hydra, etc.  |          | Monitored target       |
-+-------------------+          +-----------------------+
++-------------------+           +------------------------+
                                          |
                                          |
                                          v
-                              +-----------------------+
+                              +------------------------+
                               | Ubuntu Server          |
                               | Wazuh Manager          |
                               | Wazuh Dashboard        |
-                              +-----------------------+
+                              +------------------------+
 ```
 
 ## ⚔️ Attack scenarios
@@ -70,7 +70,7 @@ wazuh-xdr-siem-kali-lab/
 │   ├── 05-alerts-and-mitre.md
 │   └── 06-conclusions.md
 ├── report/
-│   └── report.md
+│   └── README.md
 ├── screenshots/
 │   ├── alerts/
 │   ├── dashboard/
