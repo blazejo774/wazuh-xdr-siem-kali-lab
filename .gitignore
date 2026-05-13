@@ -1,0 +1,61 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# Wazuh / lab sensitive files
+ossec.conf
+client.keys
+authd.pass
+wazuh-passwords.txt
+wazuh-install-files.tar
+wazuh-certificates.tar
+
+# Virtual machines and disk images
+*.vdi
+*.vmdk
+*.ova
+*.ovf
+*.qcow2
+*.iso
+
+# Packet captures
+*.pcap
+*.pcapng
+*.cap
+
+# Screenshots temporary exports
+screenshots/tmp/
