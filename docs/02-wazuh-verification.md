@@ -104,11 +104,9 @@ sudo tail -f /var/log/filebeat/filebeat
 
 Filebeat is responsible for forwarding alerts and events from Wazuh Manager to Wazuh Indexer.
 
-Expected behavior:
+Filebeat should establish a connection to the Wazuh Indexer and monitor /var/ossec/logs/alerts/alerts.json.
 
-```text
 Filebeat should run without repeated connection or authentication errors.
-```
 
 ![Filebeat logs](../screenshots/wazuh-verification/filebeat-logs.png)
 
