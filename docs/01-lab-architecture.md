@@ -148,9 +148,6 @@ The lab is prepared for the following detection scenarios:
 - suspicious authentication activity,
 - privilege-related command execution attempts,
 - Linux system log analysis,
-- alert review in Wazuh Dashboard.
+- alert review in Wazuh Dashboard
 
-## Security note
 
-This laboratory is intended only for educational and controlled testing purposes.  
-All attack simulations should be performed only inside the isolated lab network.
