@@ -65,14 +65,17 @@ wazuh-xdr-siem-kali-lab/
 ├── docs/
 │   ├── README.md
 │   ├── 01-lab-architecture.md
-│   ├── 02-wazuh-installation.md
-│   ├── 03-agent-configuration.md
-│   ├── 04-attack-scenarios.md
-│   ├── 05-alerts-and-mitre.md
-│   └── 06-conclusions.md
+│   ├── 02-wazuh-verification.md
+│   ├── 03-wazuh-installation.md
+│   ├── 04-agent-configuration.md
+│   ├── 05-attack-scenarios.md
+│   ├── 06-alerts-and-mitre.md
+│   └── 07-conclusions.md
 ├── report/
 │   └── README.md
 ├── screenshots/
+│   ├── architecture/
+│   ├── wazuh-verification/
 │   ├── alerts/
 │   ├── dashboard/
 │   └── kali/
