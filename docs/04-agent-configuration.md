@@ -53,4 +53,4 @@ The Wazuh Agent sends collected events from the Ubuntu endpoint to the Wazuh Man
 
 Runtime checks and screenshots are documented in:
 
-[`docs/02-wazuh-verification.md`](../docs/02-wazuh-verification.md)
+[`02-wazuh-verification.md`](./02-wazuh-verification.md)
