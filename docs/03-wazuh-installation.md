@@ -117,7 +117,7 @@ Example use cases:
 Local rules are documented and stored in:
 
 
-[/wazuh/rules/local_rules.xml](../wazuh/rules/local_rules.xml)
+[`wazuh/rules/local_rules.xml`](../wazuh/rules/local_rules.xml)
 
 
 ## Decoder usage
