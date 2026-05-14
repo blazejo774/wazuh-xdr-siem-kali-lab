@@ -89,13 +89,6 @@ Relevant configuration:
     <decoder_dir>etc/decoders</decoder_dir>
     <rule_dir>etc/rules</rule_dir>
   </ruleset>
-
-  <rule_test>
-    <enabled>yes</enabled>
-    <threads>1</threads>
-    <max_sessions>64</max_sessions>
-    <session_timeout>15m</session_timeout>
-  </rule_test>
 ```
 
 Local custom rules are placed in:
@@ -124,7 +117,7 @@ Example use cases:
 Local rules are documented and stored in:
 
 
-[License](../wazuh/rules/local_rules.xml)
+[/wazuh/rules/local_rules.xml](../wazuh/rules/local_rules.xml)
 
 
 ## Decoder usage
