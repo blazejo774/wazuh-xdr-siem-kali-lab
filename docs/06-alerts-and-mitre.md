@@ -6,7 +6,7 @@ This document summarizes how selected Wazuh alerts from the lab were mapped to M
 
 Detailed attack commands and evidence screenshots are documented in:
 
-[`05-attack-scenarios.md`](05-attack-scenarios.md)
+[`05-attack-scenarios.md`](./05-attack-scenarios.md)
 
 ## Mapping summary
 
