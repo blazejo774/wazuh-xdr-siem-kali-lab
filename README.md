@@ -119,6 +119,21 @@ Main files:
 - [`06-alerts-and-mitre.md`](./docs/06-alerts-and-mitre.md)
 - [`07-conclusions.md`](./docs/07-conclusions.md)
 
+## 🧪 Helper scripts
+
+Helper scripts are available in:
+
+```text
+scripts/
+```
+
+Available scripts:
+
+- [`scripts/kali/nmap_scan.sh`](./scripts/kali/nmap_scan.sh)
+- [`scripts/kali/hydra_ssh_test.sh`](./scripts/kali/hydra_ssh_test.sh)
+
+The scripts are prepared only for the local lab network.
+
 ## 🚧 Project status
 
 Completed lab documentation.
