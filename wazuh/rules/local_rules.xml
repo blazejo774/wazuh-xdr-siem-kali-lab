@@ -4,7 +4,18 @@
 <!-- Copyright (C) 2015, Wazuh Inc. -->
 
 <!-- Example -->
+
+
 <group name="local,syslog,sshd,sudo,">
+
+  <rule id="100200" level="8">
+    <match>UFW BLOCK</match>
+    <description>Custom: UFW blocked network traffic on monitored endpoint</description>
+    <mitre>
+      <id>T1046</id>
+    </mitre>
+    <group>firewall,network_scan,mitre_T1046,</group>
+  </rule>
 
   <!-- SSH authentication failure from any source IP -->
   <rule id="100001" level="5">
