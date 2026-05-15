@@ -27,21 +27,31 @@ Detailed attack commands and evidence screenshots are documented in:
 
 ## MITRE ATT&CK dashboard
 
-The Wazuh MITRE ATT&CK dashboard was used to confirm that alerts were grouped under the correct tactics and techniques.
+The Wazuh MITRE ATT&CK dashboard was used to confirm that generated alerts were grouped under MITRE tactics and techniques.
 
-Main observed techniques:
+Observed tactics:
 
-- `T1046 - Network Service Discovery`
-- `T1110 - Brute Force`
-- `T1548.003 - Sudo and Sudo Caching`
+- `Credential Access`
+- `Lateral Movement`
+- `Defense Evasion`
+- `Privilege Escalation`
+- `Discovery`
+- `Initial Access`
+- `Persistence`
+- `Impact`
+
+Observed techniques:
+
+- `Password Guessing`
+- `SSH`
+- `Brute Force`
+- `Network Service Discovery`
+- `Valid Accounts`
+- `Sudo and Sudo Caching`
 
 ![MITRE ATT&CK dashboard](../screenshots/alerts/mitre-attack-dashboard.png)
 
 ## Notes
-
-The Nmap scan required endpoint firewall logging because Wazuh analyzes collected logs, not raw packets.
-
-SSH and sudo detections were based on standard Linux authentication logs.
 
 Local rules used in this lab are stored in:
 
