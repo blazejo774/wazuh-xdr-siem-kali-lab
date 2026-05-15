@@ -1,0 +1,14 @@
+# Keep shell scripts with Unix line endings
+*.sh text eol=lf
+
+# Markdown and text files
+*.md text
+*.txt text
+
+# XML files
+*.xml text
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
