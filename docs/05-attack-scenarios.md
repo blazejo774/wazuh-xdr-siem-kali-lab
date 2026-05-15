@@ -120,7 +120,7 @@ Ubuntu endpoint: 192.168.56.11
 
 ### Command
 
-Run a sudo command and enter an incorrect & correct password on the Ubuntu endpoint:
+Run a sudo command on the Ubuntu endpoint and test both correct and incorrect password attempts:
 
 ```bash
 sudo -l
@@ -128,8 +128,7 @@ sudo -l
 
 ### Purpose
 
-Generate a sudo-related authentication event on the monitored endpoint.
-Generate a failed sudo authentication event.
+Generate sudo-related authentication events on the monitored endpoint, including successful command execution and failed sudo authentication.
 
 ### Evidence
 
