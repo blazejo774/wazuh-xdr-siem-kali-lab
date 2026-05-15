@@ -6,57 +6,57 @@
 ![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-red)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-This repository contains a practical cybersecurity laboratory based on Wazuh XDR/SIEM, Kali Linux and Ubuntu.  
-The main goal of the project is to build a small monitored environment, generate controlled attack scenarios from a dedicated Kali Linux attacker machine and analyze security alerts in the Wazuh dashboard.
+This repository contains a practical cybersecurity laboratory based on Wazuh XDR/SIEM, Kali Linux and Ubuntu.
+
+The goal of the project is to build a small monitored environment, generate controlled attack scenarios and analyze security alerts in Wazuh Dashboard.
 
 ## 📌 Project overview
 
 The lab environment consists of three virtual machines:
 
-- Kali Linux VM used as the Wazuh manager and dashboard host,
-- Kali Linux VM used as the attacking machine,
-- Ubuntu Linux endpoint with the Wazuh agent installed,
-- simulated attack scenarios such as network scanning, brute-force attempts and suspicious network traffic generation.
-
-The project is designed as a hands-on SIEM/XDR home lab and portfolio project for cybersecurity learning.
+| Machine | Role | IP address |
+|---|---|---:|
+| Kali Linux | Wazuh Manager, Indexer and Dashboard | 192.168.56.3 |
+| Ubuntu Linux | Monitored endpoint with Wazuh Agent | 192.168.56.11 |
+| Kali Linux | Attacker machine | 192.168.56.30 |
 
 ## 🎯 Main objectives
 
-- Install and configure Wazuh as an XDR/SIEM platform on Kali Linux.
-- Connect the monitored Ubuntu endpoint to the Wazuh manager.
-- Simulate basic attacker activity from a separate Kali Linux machine.
-- Generate and analyze security alerts.
+- Configure a Wazuh SIEM/XDR lab environment.
+- Connect an Ubuntu endpoint to the Wazuh Manager.
+- Generate controlled security events from Kali Linux.
+- Detect SSH brute-force, sudo activity and network scan events.
 - Map selected alerts to MITRE ATT&CK techniques.
-- Document the full lab setup, attack scenarios and conclusions.
+- Document the lab setup, verification steps and results.
 
-## 🧩 Planned lab architecture
+## 🧩 Lab architecture
 
 ```text
 +--------------------+          +------------------------+
 | Kali Linux         |          | Ubuntu Endpoint        |
 | Attacker machine   | -------> | Wazuh Agent            |
-| nmap, hydra, etc.  |          | Monitored target       |
+| 192.168.56.30      |          | 192.168.56.11          |
+| nmap, hydra        |          |                        |
 +--------------------+          +------------------------+
                                          |
-                                         |
+                                         | logs / security events
                                          v
                               +------------------------+
                               | Kali Linux             |
                               | Wazuh Manager          |
+                              | Wazuh Indexer          |
                               | Wazuh Dashboard        |
+                              | 192.168.56.3           |
                               +------------------------+
 ```
 
-## ⚔️ Attack scenarios
+## ⚔️ Implemented scenarios
 
-Planned test scenarios:
-
-- network reconnaissance using Nmap,
-- SSH brute-force simulation using Hydra,
-- suspicious network traffic generation using hping3,
-- Linux authentication log analysis,
-- alert analysis in Wazuh Dashboard,
-- mapping selected events to MITRE ATT&CK techniques.
+| Scenario | Detection source | MITRE mapping |
+|---|---|---|
+| Nmap SYN scan | UFW firewall logs | T1046 - Network Service Discovery |
+| SSH brute-force with Hydra | Linux authentication logs | T1110 - Brute Force |
+| sudo command / failed sudo attempt | Linux authentication logs | T1548.003 - Sudo and Sudo Caching |
 
 ## 📁 Repository structure
 
@@ -77,7 +77,6 @@ wazuh-xdr-siem-kali-lab/
 │   ├── architecture/
 │   ├── wazuh-verification/
 │   ├── alerts/
-│   ├── dashboard/
 │   └── kali/
 ├── scripts/
 │   ├── kali/
@@ -93,12 +92,33 @@ wazuh-xdr-siem-kali-lab/
 ## 🛠️ Tools and technologies
 
 - Wazuh XDR/SIEM
-- Kali Linux Wazuh host
-- Kali Linux attacker machine
-- Ubuntu Linux endpoint
 - Wazuh Agent
+- Kali Linux
+- Ubuntu Linux
 - Nmap
 - Hydra
-- hping3
+- UFW
 - MITRE ATT&CK
 - VirtualBox
+
+## 📚 Documentation
+
+Technical documentation is available in:
+
+```text
+docs/
+```
+
+Main files:
+
+- [`01-lab-architecture.md`](./docs/01-lab-architecture.md)
+- [`02-wazuh-verification.md`](./docs/02-wazuh-verification.md)
+- [`03-wazuh-installation.md`](./docs/03-wazuh-installation.md)
+- [`04-agent-configuration.md`](./docs/04-agent-configuration.md)
+- [`05-attack-scenarios.md`](./docs/05-attack-scenarios.md)
+- [`06-alerts-and-mitre.md`](./docs/06-alerts-and-mitre.md)
+- [`07-conclusions.md`](./docs/07-conclusions.md)
+
+## 🚧 Project status
+
+Completed lab documentation.
