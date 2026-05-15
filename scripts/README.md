@@ -60,5 +60,5 @@ Generate controlled SSH authentication attempts against the monitored Ubuntu end
 
 The scripts are prepared only for the local lab network.
 
-Do not run them against external systems PLEASE!!!
+Do not run them against external systems!
 

@@ -79,8 +79,8 @@ wazuh-xdr-siem-kali-lab/
 │   ├── alerts/
 │   └── kali/
 ├── scripts/
-│   ├── kali/
-│   └── ubuntu/
+│   ├── README.md
+│   └── kali/
 ├── wazuh/
 │   ├── agent-config/
 │   └── rules/
