@@ -10,9 +10,7 @@ Scripts in `scripts/kali/` are intended to be executed on the Kali attacker mach
 
 Script:
 
-```text
-scripts/kali/nmap_scan.sh
-```
+[`scripts/kali/nmap_scan.sh`](./kali/nmap_scan.sh)
 
 Usage:
 
@@ -37,9 +35,7 @@ Run an Nmap SYN scan against the monitored Ubuntu endpoint.
 
 Script:
 
-```text
-scripts/kali/hydra_ssh_test.sh
-```
+[`scripts/kali/hydra_ssh_test.sh`](./kali/hydra_ssh_test.sh)
 
 Usage:
 
